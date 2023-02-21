@@ -1,0 +1,14 @@
+jQuery.sap.require("sap.ui.core.format.DateFormat");
+jQuery.sap.require("sap.ui.core.format.DateFormat")
+jQuery.sap.require('sap.ui.layout.cssgrid.GridBoxLayout');
+
+const appControl = {
+    interval: null,
+    identifier: null,
+    queue: null,
+}
+
+sap.ui.getCore().attachInit(() => {
+    fetchAppData();
+    appControl.interval = setInterval(() => modelAppData.refresh(true), 1000)
+})

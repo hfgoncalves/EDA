@@ -1,0 +1,14 @@
+[inoSimpleFormname, inoSimpleFormnote].forEach(field => {
+    if(!field.getValue()) {
+        field.setValueState("Error")
+    } else {
+        field.setValueState("None")
+    }
+})
+
+if (!inoSimpleFormname.getValue() || !inoSimpleFormnote.getValue()) {
+    sap.m.MessageToast.show("Please enter data in all required fields")
+    return;
+}
+
+enterQueue();

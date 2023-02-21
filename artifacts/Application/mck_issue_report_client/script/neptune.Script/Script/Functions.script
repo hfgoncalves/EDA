@@ -1,0 +1,69 @@
+const updateQueue = () => {
+
+    const status = modelAppData.oData.queue.map(queue => ({name: queue.name, id: queue.id, new: 0, pro: 0, comp: 0, percentNew: 0, percentPro: 0, percentComp: 0}));
+
+    modelAppData.oData.master.forEach(data => {
+        const queue = status.find(x => x.id === data.queue);
+        
+        if (queue) {
+            if (+data.status === 1) queue.new++;
+            if (+data.status === 2) queue.pro++;
+            if (+data.status === 3) queue.comp++;
+        }
+    })
+
+    status.forEach(queue => {
+        queue.percentNew = (100 / 20) * queue.new;
+        queue.percentPro = (100 / 20) * queue.pro;
+        queue.percentComp = (100 / 20) * queue.comp;
+    })
+
+    modelStatus.setData(status)
+    modelAppData.refresh(true);
+}
+
+const fetchAppData = async () => {
+    const response = await fetch('https://dxp22webinars.neptune-software.cloud/api/serverscript/mck_issue_report/getData');
+    const data = await response.json();
+    modelAppData.setData(data);
+
+    setTimeout(() => updateQueue(), 300);
+}
+
+const enterQueue = () => {
+
+    oApp.to(pageManagment);
+    appControl.identifier = ModelData.genID();
+
+    const { name, phone, email, note } = modelpageReport.getData();
+
+    triggerEventTrigger({
+        process: 'updateQueue',
+        data: {
+            name,
+            phone,
+            email,
+            note,
+            queue: appControl.queue.id,
+            identifier: appControl.identifier,
+            status: 1,
+        }
+    })
+}
+
+const controller = payload => {
+    switch(payload.process) {
+        case "updateQueue":
+        case 'enterQueue':
+            ModelData.Update(modelAppData.oData.master, "id", payload.data.id, payload.data);
+            break;
+        case 'leaveQueue':
+            ModelData.Delete(modelAppData.oData.master, "id", payload.data.id, payload.data);
+            break;
+        default:
+            console.log('Error');
+            return;
+    }
+    modelAppData.refresh(true);
+    updateQueue();
+}

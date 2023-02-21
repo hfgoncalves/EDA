@@ -1,0 +1,14 @@
+const context = oEvent.oSource.getBindingContext("AppData");
+const data = context.getObject();
+
+if (data.description === 'Create a new feature request') {
+    inoSimpleFormnote.setPlaceholder("Describe the functionality")
+} else {
+    inoSimpleFormnote.setPlaceholder("Desribe the bug")
+}
+
+oTitle.setText(data.description);
+
+appControl.queue = data;
+modelpageReport.setData({});
+oApp.to(pageReport);

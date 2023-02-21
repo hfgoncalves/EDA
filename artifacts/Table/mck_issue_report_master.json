@@ -1,0 +1,57 @@
+{
+	"id": "d5a31146-1a76-ed11-9f5e-0022489e2f99",
+	"createdAt": "2022-12-07T10:31:15.536Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "25a9eaa2-0fdd-4515-c666-869cafdb9156",
+			"fieldName": "name",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"description": "Name",
+			"isNullable": true
+		},
+		{
+			"id": "7e0da25a-ac29-4b1c-ba9a-8764200a50f7",
+			"fieldName": "status",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"description": "Status",
+			"isNullable": true
+		},
+		{
+			"id": "ca9867dd-c5fd-4997-9aa2-18e887a85bc6",
+			"fieldName": "identifier",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Unique identifier",
+			"isNullable": true
+		},
+		{
+			"id": "2001b0c9-d3b4-43b9-df06-c87c147c4728",
+			"fieldName": "note",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"description": "Note",
+			"isNullable": true
+		},
+		{
+			"id": "9966e795-00ce-4448-8deb-c888550bdb99",
+			"fieldName": "queue",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"description": "Queue",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "mck_issue_report_master",
+	"description": null,
+	"ver": "22.12.8.147",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "d7628295-f576-ed11-9f5e-0022489e2f99",
+	"rolesRead": [],
+	"rolesWrite": []
+}

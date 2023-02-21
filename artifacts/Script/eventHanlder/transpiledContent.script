@@ -1,0 +1,19 @@
+try {
+    var response = {
+        process: payload.process,
+        data: null,
+    };
+    switch (payload.process) {
+        case "updateQueue":
+            response.data = await entities.mck_issue_report_master.save(payload.data);
+            break;
+        default:
+            log.error("Process not handled: ", payload.process);
+    }
+    await p9.events.publish('mck_issue_report_client', response);
+    complete();
+}
+catch (e) {
+    log.error("Error in processing", e);
+    complete();
+}

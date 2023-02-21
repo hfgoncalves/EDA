@@ -1,0 +1,15 @@
+{
+	"id": "b56c200e-2276-ed11-9f5e-0022489e2f99",
+	"createdAt": "2022-12-07T11:26:56.630Z",
+	"createdBy": "admin",
+	"name": "mck_issue_report_client",
+	"description": null,
+	"eventAction": "AppEvent",
+	"scriptId": null,
+	"jobId": null,
+	"workflowId": null,
+	"package": "d7628295-f576-ed11-9f5e-0022489e2f99",
+	"script": null,
+	"job": null,
+	"workflow": null
+}

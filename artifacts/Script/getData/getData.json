@@ -1,0 +1,36 @@
+{
+	"id": "3e6ddadb-1a76-ed11-9f5e-0022489e2f99",
+	"createdAt": "2022-12-07T10:35:25.810Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "D5A31146-1A76-ED11-9F5E-0022489E2F99",
+			"name": "mck_issue_report_master",
+			"contextname": "mck_issue_report_master"
+		},
+		{
+			"id": "9F8025F5-1976-ED11-9F5E-0022489E2F99",
+			"name": "mck_issue_report_status",
+			"contextname": "mck_issue_report_status"
+		},
+		{
+			"id": "23A3C0A1-1D76-ED11-9F5E-0022489E2F99",
+			"name": "mck_issue_report_queue",
+			"contextname": "mck_issue_report_queue"
+		}
+	],
+	"apis": [],
+	"name": "getData",
+	"ver": "22.12.7.139",
+	"description": null,
+	"content": "file:///content.script",
+	"useAsGlobalScript": false,
+	"transpiledContent": "file:///transpiledContent.script",
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "typescript",
+	"jsscriptGroup": "1a9acdd4-1a76-ed11-9f5e-0022489e2f99",
+	"package": "d7628295-f576-ed11-9f5e-0022489e2f99"
+}

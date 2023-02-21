@@ -1,0 +1,103 @@
+{
+	"id": "d7628295-f576-ed11-9f5e-0022489e2f99",
+	"createdAt": "2022-12-08T12:41:07.580Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/hfgoncalves/EDA.git"
+	},
+	"name": "com.neptune.issue_report",
+	"description": null,
+	"ver": "23.2.21.843",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "785e7ab6-1976-ed11-9f5e-0022489e2f99",
+			"application": "mck_issue_report_client",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "574bd1c6-1c76-ed11-9f5e-0022489e2f99",
+			"name": "mck_issue_report",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "d5a31146-1a76-ed11-9f5e-0022489e2f99",
+			"name": "mck_issue_report_master",
+			"description": null
+		},
+		{
+			"id": "9f8025f5-1976-ed11-9f5e-0022489e2f99",
+			"name": "mck_issue_report_status",
+			"description": null
+		},
+		{
+			"id": "23a3c0a1-1d76-ed11-9f5e-0022489e2f99",
+			"name": "mck_issue_report_queue",
+			"description": null
+		}
+	],
+	"jsclass": [
+		{
+			"id": "3e6ddadb-1a76-ed11-9f5e-0022489e2f99",
+			"name": "getData",
+			"description": null
+		},
+		{
+			"id": "20e87f93-2176-ed11-9f5e-0022489e2f99",
+			"name": "eventHanlder",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "1a9acdd4-1a76-ed11-9f5e-0022489e2f99",
+			"name": "mck_issue_report",
+			"description": null
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [
+		{
+			"id": "5c75ae6b-ed76-ed11-9f5e-0022489e2f99",
+			"name": "Issue_Report",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [
+		{
+			"id": "f2b46c06-2276-ed11-9f5e-0022489e2f99",
+			"name": "mck_issue_report_server",
+			"description": null
+		},
+		{
+			"id": "b56c200e-2276-ed11-9f5e-0022489e2f99",
+			"name": "mck_issue_report_client",
+			"description": null
+		}
+	],
+	"media_library": []
+}

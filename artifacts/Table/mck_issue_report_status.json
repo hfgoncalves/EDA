@@ -1,0 +1,41 @@
+{
+	"id": "9f8025f5-1976-ed11-9f5e-0022489e2f99",
+	"createdAt": "2022-12-07T10:28:59.766Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "57534f8e-41c4-4abc-c3b1-1007d5d79228",
+			"fieldName": "status",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"description": "Status",
+			"isNullable": true
+		},
+		{
+			"id": "6e6bb519-54b0-491e-c5fe-a2a8aa6667e9",
+			"fieldName": "name",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"description": "Name",
+			"isNullable": true
+		},
+		{
+			"id": "10db82a3-9d11-421d-eea2-b8b7d2fb769a",
+			"fieldName": "state",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"description": "State",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "mck_issue_report_status",
+	"description": null,
+	"ver": "22.12.8.147",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "d7628295-f576-ed11-9f5e-0022489e2f99",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,0 +1,41 @@
+{
+	"id": "23a3c0a1-1d76-ed11-9f5e-0022489e2f99",
+	"createdAt": "2022-12-07T10:55:17.673Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "41784347-211a-48e1-84c9-33624f6989b4",
+			"fieldName": "name",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"description": "Name",
+			"isNullable": true
+		},
+		{
+			"id": "399d834e-1078-48ff-fa8e-7c008ca19b61",
+			"fieldName": "description",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"description": "Description",
+			"isNullable": true
+		},
+		{
+			"id": "4c6bf84a-8117-4352-d699-947fbf5fbea9",
+			"fieldName": "icon",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"description": "Icon",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "mck_issue_report_queue",
+	"description": null,
+	"ver": "22.12.8.147",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "d7628295-f576-ed11-9f5e-0022489e2f99",
+	"rolesRead": [],
+	"rolesWrite": []
+}

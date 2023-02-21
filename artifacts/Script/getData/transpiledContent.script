@@ -1,0 +1,19 @@
+try {
+    result.data = {
+        queue: await entities.mck_issue_report_queue.find(),
+        status: await entities.mck_issue_report_status.find(),
+        master: await entities.mck_issue_report_master.find({
+            select: ["id", "name", "note", "createdAt", "status", "identifier", "queue"],
+            order: { createdAt: "ASC" },
+            cache: false
+        }),
+    };
+    complete();
+}
+catch (e) {
+    result.data = {
+        status: "Error",
+        description: e
+    };
+    complete();
+}

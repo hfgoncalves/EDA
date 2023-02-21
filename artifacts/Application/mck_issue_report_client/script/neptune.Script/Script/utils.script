@@ -1,0 +1,46 @@
+const applyGridFilters = () => {
+    gridNew.setCustomLayout(new sap.ui.layout.cssgrid.GridBoxLayout({
+        boxWidth: '15.6rem'
+    }));
+
+    gridNew.getBinding("items").filter([new sap.ui.model.Filter("status", "EQ", 1)]);
+
+    gridNew.getBinding("items").sort(new sap.ui.model.Sorter("queue", false, context => {
+        const data = context.getObject();
+        const rec = ModelData.FindFirst(modelAppData.oData.queue, "id", data.queue);
+        return { 
+            key: rec.name,
+            text: rec.name
+        }
+    }));
+
+    gridProcessing.setCustomLayout(new sap.ui.layout.cssgrid.GridBoxLayout({
+        boxWidth: "15.6rem"
+    }));
+
+    gridProcessing.getBinding("items").filter([new sap.ui.model.Filter("status", "EQ", 2)]);
+
+    gridProcessing.getBinding("items").sort(new sap.ui.model.Sorter("queue", false, context => {
+        const data = context.getObject();
+        const rec = ModelData.FindFirst(modelAppData.oData.queue, "id", data.queue);
+        return { 
+            key: rec.name,
+            text: rec.name
+        }
+    }));
+
+    gridCompleted.setCustomLayout(new sap.ui.layout.cssgrid.GridBoxLayout({
+        boxWidth: "15.6rem"
+    }));
+
+    gridCompleted.getBinding("items").filter([new sap.ui.model.Filter("status", "EQ", 3)]);
+
+    gridCompleted.getBinding("items").sort(new sap.ui.model.Sorter("queue", false, context => {
+        const data = context.getObject();
+        const rec = ModelData.FindFirst(modelAppData.oData.queue, "id", data.queue);
+        return { 
+            key: rec.name,
+            text: rec.name
+        }
+    })); 
+}

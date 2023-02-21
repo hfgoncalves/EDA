@@ -1,0 +1,19 @@
+{
+	"id": "f2b46c06-2276-ed11-9f5e-0022489e2f99",
+	"createdAt": "2022-12-07T11:26:43.706Z",
+	"createdBy": "admin",
+	"name": "mck_issue_report_server",
+	"description": null,
+	"eventAction": "ScriptEvent",
+	"scriptId": "20e87f93-2176-ed11-9f5e-0022489e2f99",
+	"jobId": null,
+	"workflowId": null,
+	"package": "d7628295-f576-ed11-9f5e-0022489e2f99",
+	"script": {
+		"id": "20e87f93-2176-ed11-9f5e-0022489e2f99",
+		"name": "eventHanlder",
+		"ver": "22.12.7.1127"
+	},
+	"job": null,
+	"workflow": null
+}
